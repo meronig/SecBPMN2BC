@@ -1,26 +1,17 @@
-# Welcome to the SecBPMN2BC page!
+# SecBPMN2BC REST Service
 
-SecBPMN2BC is a method created to support the design of *secure business processes* to be executed in blockchain. It is composed of a modelling language, a suggested workflow and a software tool that partially support the workflow by identifying conflicts and the part of the busines process that can be executed in blockchain.
-
-This is a fork of the original SecBPMN2BC repository, aimed at wrapping the tools developed to support the method as a REST server. The original SecBPMN2BC repository can be found here: https://github.com/MattiaSalnitri/SecBPMN2BC
+SecBPMN2BC REST Service is a fork of the original SecBPMN2BC repository, aimed at wrapping the tools developed to support the method as a REST server. The original SecBPMN2BC repository can be found here: https://github.com/MattiaSalnitri/SecBPMN2BC
 
 ## Requirements
 * Java 8
-
-## Installation and set-up instructions 
-1. Download the last SecBPMN2BC zip file from here: https://github.com/MattiaSalnitri/SecBPMN2BC/releases
-2. Copy the zip file inside Eclipse root directory and expand it there.
-3. Start Eclipse
-4. check if the plugin is installed: verify (do not click) if in the *File* -> *New* exists an element *SecBPMN2BC model*
-5. Open SecBPMN2BC perspective: *Window* -> *Perspective* ->  *Open Perspective * -> *Other* -> *Secbpmn2bc
 
 ## Deployment with Docker
 
 * Clone this repository, generate and deploy Docker images:
 
 ```
-git clone https://github.com/meronig/SecBPMN2BC.git
-cd SecBPMN2BC/deployment
+git clone https://github.com/meronig/secbpmn2bc-rest-service.git
+cd secbpmn2bc-rest-service/deployment
 docker-compose create
 docker-compose start
 ```
