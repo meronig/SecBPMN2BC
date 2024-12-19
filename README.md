@@ -29,28 +29,29 @@ docker-compose start
 # REST service APIs:
 ## /convert
 Converts a process model from BPMN to SecBPMN2BC
-Request type: POST (Multipart)
-Input: BPMN model (file)
-Output: SecBPMN2BC model
+* Request type: POST (Multipart)
+* Input: BPMN model (file)
+* Output: SecBPMN2BC model
 
 ## /check
 Verifies if no conflicting annotations are present in a SecBPMN2BC model
-Request type: POST (Multipart)
-Input: SecBPMN2BC model (file)
-Output: text file containing analysis results
+* Request type: POST (Multipart)
+* Input: SecBPMN2BC model (file)
+* Output: text file containing analysis results
 
 ## /annotate
 Identifies which elements of a SecBPMN2BC model could be moved on a blockchain
-Request type: POST (Multipart)
-Input: SecBPMN2BC model (file), whether or not to override existing annotations (override)
-Output: SecBPMN2BC model annotated with on-chain elements
+* Request type: POST (Multipart)
+* Input: SecBPMN2BC model (file), whether or not to override existing annotations (override)
+* Output: SecBPMN2BC model annotated with on-chain elements
 
 ## /updateModel
 Merges anotations in a SecBPMN model to the original BPMN model
-Request type: POST (Multipart)
-Input: BPMN model (bpmnfile), SecBPMN2BC model (secbpmnfile) 
-Output: BPMN model annotated with on-chain elements
+* Request type: POST (Multipart)
+* Input: BPMN model (bpmnfile), SecBPMN2BC model (secbpmnfile) 
+* Output: BPMN model annotated with on-chain elements
 
 # Acknowledgements
 Copyright © 2022-2024 Technical University of Denmark
+
 Copyright of existing SecBPMN2BC portions © 2020-2021 Politecnico di Milano
